@@ -1,2 +1,3 @@
 // Function for calculating grades
-const calculate = () => {
+
+const calculate = () => {}
