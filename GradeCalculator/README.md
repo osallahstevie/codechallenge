@@ -1,11 +1,14 @@
-# Student Grade Calculator
+# Moringa Week 3 Code Challenge
 
-A calculator for generating average grade.
+A project of three programmes;
+(a) A grade calculator
+(b) A Speed calculator
+(c) A net salary calculator
 
 ## Installation
-Input student marks.
+Input required values.
 Hit enter.
-Get average grade.
+Generate result
 
 ## Technologies Used
 Javascript
