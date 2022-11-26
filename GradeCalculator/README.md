@@ -16,7 +16,7 @@ Javascript
 ## Known Bugs
  No known bugs.
 
-## Support and contact details
+## Support and contact details.
 
 For any difficulties accessing the code, comments, concerns, ideas or any form of questions. Kindly contact me at steven.osallah@student.moringaschool.com
 
