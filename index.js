@@ -1,5 +1,5 @@
 // Function for calculating grades
-var students = [['Dennis', 80], ['Ben', 77], ['Joy', 88], ['Tancy', 95], ['Tom', 68]];
+var students = [['Dennis', 80], ['Ben', 74], ['Joy', 88], ['Tancy', 95], ['Tom', 70]];
 var Avgmarks = 0;
 
 for (var i=0; i < students.length; i++){
