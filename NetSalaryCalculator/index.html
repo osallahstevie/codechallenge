@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Net Salary Calculator</title>
+    <script>
+        //function declaration for calculating sales tax
+        function calculate() {
+            //get three inputs from input boxes in the form
+            let subtotal = parseInt(document.getElementById("subtotal").value);
+            let taxRate = parseFloat(document.getElementById("tax_rate").value);
+
+            //validation data
+            if (subtotal <= 1000000 || tax_rate <= 50) {
+                alert("Payee tax exceeds 10000000 and/ or tax rate exceeds 50");
+            } else {
+
+                //calculate Payee tax
+                    PayeeTax = subtotal * taxRate / 100;
+                    total = subtotal + PayeeTax;
+
+
+                //display the results to the last two boxes
+                document.getElementById("Payee_tax").value = PayeeTax;
+                document.getElementById("total").value = total;
+            }
+        }
+
+
+        function clear_form() {
+            document.getElementById("subtotal").value = " ";
+            document.getElementById("tax_rate").value = " ";
+            document.getElementById("Payee_tax").value = " ";
+            document.getElementById("total").value = " ";
+            /*document.getElementById("investment").focus();*/
+        }
+
+        //function calling part using window.onload
+        window.onload = function() {
+            document.getElementById("calculate").onclick = calculate
+            document.getElementById("clear").onclick = clear_form
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Net Salary Tax Calculator</h1>
+        <p>Enter Subtotal and Tax Rate and click "Calculate".</p>
+        <div id="taxCalc">
+            <label for="subtotal">Net Salary:</label>
+            <input type="text" id="subtotal">
+            <span id="subtotal_message">Enter Salary Subtotal</span><br />
+
+            <label for="tax_rate">Payee Tax:</label>
+            <input type="text" id="tax_rate">
+            <span id="tax_rate_message">Enter Payee Tax Rate </span><br />
+
+            <label for="tax_rate">NSSF DEductions:</label>
+            <input type="text" id="tax_rate">
+            <span id="tax_rate_message">Tax Rate </span><br />
+
+            <label for="Payee_tax"> NSSF Tax:</label>
+            <input type="text" id="sales_tax" disabled><br />
+
+            <label for="total">Total:</label>
+            <input type="text" id="total" disabled><br />
+
+            <label>&nbsp;</label>
+            <input type="button" id="calculate" value="Calculate">
+            <input type="button" id="clear" value="Clear"><br />
+        </div>
+    </div>
+</body>
+
+</html>
